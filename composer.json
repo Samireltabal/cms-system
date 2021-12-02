@@ -1,0 +1,31 @@
+{
+    "name": "samireltabal/cms-system",
+    "description": "CMS System",
+    "type": "library",
+    "require": {
+        "samireltabal/auth-system": "dev-master"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SamirEltabal\\CmsSystem\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Samir M. Eltabal",
+            "email": "samir.m.eltabal@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SamirEltabal\\CmsSystem\\CmsSystemServiceProvider"
+            ],
+            "aliases": {
+                "CmsSystem": "SamirEltabal\\CmsSystem\\CmsSystemFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
